@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Chem Tutor</title>
+  <meta name="description" content="Chemistry tutoring — appointments, questions, and resources." />
+
+  <!-- Simple, clean styling (no framework needed) -->
+  <style>
+    :root { --max: 900px; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; }
+    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #eee; }
+    nav { max-width: var(--max); margin: 0 auto; padding: 14px 16px; display: flex; gap: 16px; align-items: center; }
+    nav a { color: #111; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: var(--max); margin: 0 auto; padding: 28px 16px 64px; }
+    h1 { font-size: 2rem; margin: 18px 0 8px; }
+    h2 { margin-top: 38px; }
+    .muted { color: #555; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 16px; margin-top: 14px; }
+    label { display:block; margin-top: 10px; font-weight: 600; }
+    input, textarea { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #ddd; border-radius: 10px; font: inherit; }
+    button { margin-top: 12px; padding: 10px 14px; border: 0; border-radius: 10px; font: inherit; cursor: pointer; }
+    footer { max-width: var(--max); margin: 0 auto; padding: 18px 16px; border-top: 1px solid #eee; color:#555; }
+    .video { aspect-ratio: 16/9; width: 100%; border: 0; border-radius: 12px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#top"><strong>The Chem Tutor</strong></a>
+      <a href="#about">About</a>
+      <a href="#tutoring">Tutoring</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <h1>Chemistry tutoring, made clear.</h1>
+    <p class="muted">Appointments, quick questions, and video explanations for high school & college chemistry.</p>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p><strong>Your Name</strong> — Add 2–4 sentences about your background, what you tutor, and who you help.</p>
+        <p class="muted">Example: “I help students master gen chem, AP chem, and organic chemistry using simple explanations and targeted practice.”</p>
+      </div>
+    </section>
+
+    <section id="tutoring">
+      <h2>Tutoring</h2>
+      <div class="card">
+        <ul>
+          <li>1:1 tutoring (online)</li>
+          <li>Homework help & exam prep</li>
+          <li>Topic deep dives: stoichiometry, equilibrium, acids/bases, kinetics, etc.</li>
+        </ul>
+        <p class="muted">Add your pricing, availability, and how students should prepare.</p>
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2>Videos</h2>
+      <div class="card">
+        <p class="muted">Replace the video ID in the URL with your YouTube video’s ID.</p>
+        <iframe class="video"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="YouTube video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Use the form below to request an appointment or ask a question.</p>
+
+        <!-- For now this form does nothing until we connect a form service -->
+        <form>
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message" rows="5" placeholder="What do you need help with?"></textarea>
+
+          <button type="submit">Send</button>
+          <p class="muted">Next step: we’ll make this form actually send you emails.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="y"></span> The Chem Tutor</div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
